@@ -14,7 +14,7 @@
   <header>
     <!-- * Navbar Area -->
     <nav class="bg-[#15803D]">
-      <div class="navbar w-10/12 mx-auto">
+      <div class="navbar w-[96%] md:w-10/12 mx-auto">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="p-3 rounded-[7px] mr-2 hover:bg-gray-400 duration-300 border-0 lg:hidden">
@@ -51,8 +51,8 @@
         <figure class="grid justify-start">
           <img src="./assets/hero-leaf1.png" alt="">
         </figure>
-        <div>
-          <h2 class="text-5xl font-bold text-[#1F2937]">Plant a Tree, Grow a Future</h2>
+        <div class="py-4 md:py-0">
+          <h2 class="text-[18px] md:text-2xl lg:text-5xl font-bold text-[#1F2937]">Plant a Tree, Grow a Future</h2>
           <p class="text-[#1F2937] text-[16px] text-center my-4">Join our mission to plant 1 million trees and make the Earth greener for future generations.</p>
           <div class="grid justify-center mt-5">
             <button class="py-[6px] px-[14px] hover:bg-gray-700 hover:text-white rounded-full bg-[#FACC15] duration-500 text-[#15803D]">Get Involved</button>
@@ -66,19 +66,19 @@
 
     <section class="bg-[#F0FDF4]">
     <!-- * Trees and Categories Sectons -->
-      <section class="w-10/12 mx-auto">
+      <section class="w-[96%] md:w-10/12 mx-auto">
         <h2 class="text-center pt-[100px] pb-[40px] text-[32px] font-semibold text-[#1F2937]">Choose Your Trees</h2>
         <div class="grid grid-cols-12 gap-6">
 
           <!-- * Categories -->
-          <div class="col-span-2">
+          <div class="col-span-4 order-2 md:order-1 md:col-span-3 lg:col-span-2">
             <h2 class="text-[20px] font-semibold text-[#000000]">Categories</h2>
             <div id="categories"></div>
           </div>
 
           <!-- * Card Container -->
-          <div class="col-span-8">
-            <div id="card-container" class="grid grid-cols-3 gap-6">
+          <div class="col-span-8 order-3 md:order-2 md:col-span-5 lg:col-span-8">
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
               <div class="flex justify-end items-center">
                 <span class="loading loading-spinner loading-xl"></span>
               </div>
@@ -86,7 +86,7 @@
           </div>
 
           <!-- * Show Card -->
-          <div class="col-span-2">
+          <div class="col-span-12 order-1 md:order-3 md:col-span-4 lg:col-span-2">
             <div class="bg-[#FFFFFF] rounded-[12px] p-4 h-full">
               <h2 class="text-[20px] font-semibold text-[#000000]">Your Cart</h2>
               <div id="show-card">
@@ -122,13 +122,13 @@
       </section>
 
       <!-- * About the Campaign Section -->
-      <section class="w-10/12 mx-auto pb-[100px]">
+      <section class="w-[96%] sm:w-10/12 mx-auto pb-[100px]">
         <h2 class="text-center pt-[100px] pb-[40px] text-[32px] font-semibold text-[#1F2937]">About the Campaign</h2>
         <div class="grid grid-cols-12">
-          <div class="col-span-2">
+          <div class="md:col-span-2">
           </div>
-          <div class="col-span-8">
-            <div class="grid grid-cols-2 gap-8 justify-between items-center">
+          <div class="col-span-12 md:col-span-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-between items-center">
               <div>
                 <figure>
                   <img src="./assets/about.png" alt="">
@@ -142,7 +142,7 @@
               </div>
             </div>
           </div>
-          <div class="col-span-2">
+          <div class="md:col-span-2">
           </div>
         </div>
       </section>
@@ -151,7 +151,7 @@
     <!-- * Our Impact Section -->
     <section class="bg-[#CFF0DC] py-[100px]">
       <h2 class="text-center pb-[40px] text-[32px] font-semibold text-[#1F2937]">Our Impact</h2>
-      <div class="w-10/12 mx-auto grid grid-cols-3 gap-10 ">
+      <div class="w-[96%] sm:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 ">
         <div class="bg-[#FFFFFF] rounded-[10px] grid justify-center items-center p-10 hover:bg-gray-300 duration-500">
           <h2 class="text-[32px] font-semibold text-[#15803D] text-center">500K+</h2>
           <p class="text-[#1F2937] text-center">Trees Planted</p>
@@ -172,7 +172,7 @@
   <footer>
     <section class="footer-top bg-[#166534] py-[100px]">
       <h2 class="text-center pb-[40px] text-[32px] font-semibold text-[#FFFFFF]">Plant a Tree Today</h2>
-      <div class="bg-[#15803D] w-3/12 mx-auto rounded-[10px]">
+      <div class="bg-[#15803D] w-9/12 md:w-7/12 lg:w-5/12 xl:w-4/12 2xl:w-3/12 mx-auto rounded-[10px]">
         <div class="p-10">
           <input class="w-full bg-white rounded-[7px] p-3 border-0" type="text" placeholder="Your Name">
           <input class="w-full bg-white rounded-[7px] p-3 border-0 my-3" type="email" placeholder="Your Email Address">

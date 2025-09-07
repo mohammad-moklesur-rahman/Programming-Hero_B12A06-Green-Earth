@@ -45,6 +45,7 @@
   </header>
 
   <main>
+    <!-- * Banner Section -->
     <section class="banner bg-[#CFF0DC]">
       <div class="grid grid-cols-3 justify-between items-center">
         <figure class="grid justify-start">
@@ -61,6 +62,69 @@
           <img src="./assets/hero-leaf2.png" alt="">
         </figure>
       </div>
+    </section>
+
+    <section class="bg-[#F0FDF4]">
+    <!-- * Trees and Categories Sectons -->
+      <section class="w-10/12 mx-auto">
+        <h2 class="text-center pt-[100px] pb-[40px] text-[32px] font-semibold text-[#1F2937]">Choose Your Trees</h2>
+        <div class="grid grid-cols-12 gap-6">
+
+          <!-- * Categories -->
+          <div class="col-span-2">
+            <h2 class="text-[20px] font-semibold text-[#000000]">Categories</h2>
+            <div id="categories"></div>
+          </div>
+
+          <!-- * Card Container -->
+          <div class="col-span-8">
+            <div id="card-container" class="grid grid-cols-3 gap-6">
+              <div class="flex justify-end items-center">
+                <span class="loading loading-spinner loading-xl"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- * Show Card -->
+          <div class="col-span-2">
+            <div class="bg-[#FFFFFF] rounded-[12px] p-4 h-full">
+              <h2 class="text-[20px] font-semibold text-[#000000]">Your Cart</h2>
+              <div id="show-card">
+              </div>
+              <div id="totalArea" class="hidden">
+                <div class="flex justify-between items-center mt-3 border-t-1 border-gray-200 pt-3">
+                  <div>
+                    <h2 class="text-[16px] font-medium">Total:</h2>
+                  </div>
+                  <div>
+                    <p class="text-[16px] font-medium">৳<span id="totalPrice">0</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- * Modal -->
+          <dialog id="my_modal" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+              <div id="modalInfo">
+
+              </div>
+              <div class="modal-action">
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+      </section>
+
+      <!-- * About the Campaign -->
+      <section>
+        
+      </section>
     </section>
   </main>
   <script src="./js/script.js"></script>
